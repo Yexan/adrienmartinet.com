@@ -21,22 +21,37 @@
 }
 
 
-.btn, .btn:visited {
+// .btn, .btn:visited {
 
-  @include button-style($button-btn-color, $button-btn-background, $button-btn-border);
+//   @include button-style($button-btn-color, $button-btn-background, $button-btn-border);
   
-  text-shadow:1px 1px 0px $button-btn-text-shadow;
-  box-shadow: 0 3px 0 0 $button-btn-box-shadow;
+//   text-shadow:1px 1px 0px $button-btn-text-shadow;
+//   box-shadow: 0 3px 0 0 $button-btn-box-shadow;
+
+//   &:hover, &:focus{
+//     background-color: $button-btn-hover-background;
+//     border: 1px solid $button-btn-hover-border;
+//   }
+//   &:active {
+//     position:relative;
+//     top:1px;
+//   }
+// }
+
+.btn, .btn:visited {
+  display: inline-block;
+  background-color: $violet-fonce;
+  color: $white-0;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
 
   &:hover, &:focus{
-    background-color: $button-btn-hover-background;
-    border: 1px solid $button-btn-hover-border;
-  }
-  &:active {
-    position:relative;
-    top:1px;
+    background-color: $violet-clair;
+    transition: all .4s ease-in-out;
   }
 }
+
 
 .btn-outline, .btn-outline:visited{
 
