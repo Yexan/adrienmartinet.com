@@ -13,9 +13,24 @@ $(function () {
   new WOW().init();
 
 
+  // ADDS ACTIVE CLASS TO LINKS WHEN SECTION WITH THE SAME SELECTOR AS THE HREF IS REACHED (CLASS .LINK IS NEEDED ON ALL <a> TAGS)
+  $(window).scroll(function () {
 
-  var degres = "\n ___   ___     ___   \n|__ \\ / _ \\   / _ \\  \n   ) | | | | | (_) | \n  / /| | | |  \\___/  \n / /_| |_| |         \n|____|\\___/          \n";
+    var y = $(this).scrollTop();
 
-  console.log(degres);
+    $('.link').each(function (event) {
+      if (y >= $($(this).attr('href')).offset().top -80) {
+        $('.link').not(this).removeClass('active');
+        $(this).addClass('active');
+      }
+    });
+
+  });
+
+
+
+  var adrienM = "\n              _      _              __  __ \n     /\\      | |    (_)            |  \\/  |\n    /  \\   __| |_ __ _  ___ _ __   | \\  / |\n   / /\\ \\ / _` | '__| |/ _ \\ '_ \\  | |\\/| |\n  / ____ \\ (_| | |  | |  __/ | | | | |  | |\n /_/    \\_\\__,_|_|  |_|\\___|_| |_| |_|  |_|";
+
+    console.log(adrienM);
 
 });
