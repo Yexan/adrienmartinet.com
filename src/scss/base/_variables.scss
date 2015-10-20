@@ -18,6 +18,7 @@ $grey-soft-darkest          : darken($grey-soft, 45%);
 
 
 $white-0                : #fff;
+$white-0--alpha-02      : rgba(255, 255, 255, 0.2);
 
 $black-0                : #000;
 $black-0--alpha-00      : rgba(0, 0, 0, 0);
@@ -37,6 +38,18 @@ $grey-2--60             : transparentize($grey-2, 0.6);
 $grey-3                 : darken($grey-2, 25%);
 
 
+$violet-clair:      #7f4584;
+$violet-fonce:      #663d75;
+$violet-dark:       darken($violet-fonce, 10%);
+$violet-darker:     darken($violet-fonce, 20%);
+$gris-fonce:        #444;
+$gris-moyen:        #777;
+$gris-dark:         darken($gris-fonce, 10%);
+$gris-darker:       darken($gris-fonce, 20%);
+$gris-moyen-dark:   darken($gris-moyen, 10%);
+$gris-moyen-darker: darken($gris-moyen, 20%);
+$gris-dark-soft:    darken($gris-dark, 5%);
+$gris-moyen-trans:  rgba($gris-moyen, 0.2);
 
 
 /*------------------------------------*\
@@ -54,28 +67,28 @@ $grey-3                 : darken($grey-2, 25%);
 $soft-reset-body-font-family  : Lato, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $soft-reset-body-font-size    : rem(16);
 $soft-reset-body-line-height  : 1.625em;
-$soft-reset-body-color        : $grey-1;
+$soft-reset-body-color        : $gris-dark;
 $soft-reset-body-background   : $white-0;
 
 
 /**
 * base/_typography
 */
-$h1-color                 : $grey-1;
-$h2-color                 : $grey-1;
-$h3-color                 : $grey-1;
-$h4-color                 : $grey-1;
-$h5-color                 : $grey-1;
-$h6-color                 : $grey-1;
+$h1-color                 : $white-0;
+$h2-color                 : $violet-clair;
+$h3-color                 : $violet-fonce;
+$h4-color                 : $violet-fonce;
+$h5-color                 : $violet-fonce;
+$h6-color                 : $violet-fonce;
 
 
 /**
 * base/_links
 */
-$links-a-color            : $green-1 ;
-$links-a-color-hover      : $green-2;
-$link-link-color          : $green-1;
-$link-link-hover-color    : $green-2;
+$links-a-color            : $white-0;
+$links-a-color-hover      : $white-0;
+$link-link-color          : $white-0;
+$link-link-hover-color    : $white-0;
 
 
 ////////////////////////////////////////
@@ -100,25 +113,25 @@ $form-spinner-div-background      : $green-1;
 /**
 * module/_button
 */
-$button-color                       : $green-1;
-$button-color-hover                 : $green-2;
+$button-color                       : $violet-fonce;
+$button-color-hover                 : $violet-clair;
 $button-btn-color                   : $white-0;
-$button-btn-background              : $green-1;
-$button-btn-border                  : $green-1;
-$button-btn-text-shadow             : $green-3;
-$button-btn-box-shadow              : $green-3;
-$button-btn-hover-background        : $green-2;
-$button-btn-hover-border            : $green-2;
-$button-btn-outline-color           : $green-1;
+$button-btn-background              : $violet-fonce;
+$button-btn-border                  : $violet-fonce;
+$button-btn-text-shadow             : $violet-darker;
+$button-btn-box-shadow              : $violet-darker;
+$button-btn-hover-background        : $violet-clair;
+$button-btn-hover-border            : $violet-clair;
+$button-btn-outline-color           : $violet-fonce;
 $button-btn-outline-background      : $black-0--alpha-00;
-$button-btn-outline-border          : $green-1;
-$button-btn-outline-hover-color     : $green-2;
-$button-btn-outline-hover-border    : $green-2;
-$button-btn-outline-2-color         : $green-1;
+$button-btn-outline-border          : $violet-fonce;
+$button-btn-outline-hover-color     : $violet-clair;
+$button-btn-outline-hover-border    : $violet-clair;
+$button-btn-outline-2-color         : $violet-fonce;
 $button-btn-outline-2-background    : $black-0--alpha-00;
-$button-btn-outline-2-border        : $green-1;
-$button-btn-outline-2-hover-color   : $green-2;
-$button-btn-outline-2-hover-border  : $green-2;
+$button-btn-outline-2-border        : $violet-fonce;
+$button-btn-outline-2-hover-color   : $violet-clair;
+$button-btn-outline-2-hover-border  : $violet-clair;
 
 
 /**
