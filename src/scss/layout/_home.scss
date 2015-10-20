@@ -1,0 +1,154 @@
+/* --------------------------------------------------------------- */
+/* == Layout home                                                  */
+/* --------------------------------------------------------------- */
+
+// This is an exemple for the starter demo, you can delete all the followings
+
+#home{
+  
+  /*------------------------------------*\
+    == Home > First Pannel
+  \*------------------------------------*/
+  #firstPanel{
+    min-height: 100vh;
+    text-align: center;
+
+    h1{
+      line-height: 1.5;
+    }
+    
+    // Responsive, force the fist panel to display table / table-cell to vertical align middle it !
+    @media (max-width: 540px){
+      display: table;
+      .cell{
+        display: table-cell;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+  // Fix min-height property for Firefox ...
+  _:-moz-tree-row(hover), #firstPanel{
+    height: 100vh;
+  }
+  
+
+  /*------------------------------------*\
+    == Home > Feature
+  \*------------------------------------*/
+  #feature{
+    background-color: $grey-soft;
+    padding: 50px 0;
+    text-align: center;
+    
+    .cell{
+      span{
+        display: block;
+        margin-top: 15px;
+        font-size: rem(50);
+        color: $green-1;
+      }
+      &:hover, &:focus{
+        span{
+          color: $green-2;
+        }
+      }
+      
+      .cell{
+        padding: 0 5px;
+        span{
+          font-size: rem(40);
+          color: $grey-3;
+        }
+
+        &:hover, &:focus{
+          span{
+            color: $grey-1;
+          }
+        }
+      }
+      @media (max-width: 880px){
+        display: block;
+        .cell{
+          display: table-cell;
+        }
+        &+.cell{
+          margin-top: 50px;
+        }
+      }
+      @media (max-width: 540px){
+        .cell{
+          display: block;
+        }
+      }
+    }
+    
+    h2{
+      margin-top: 15px;
+    }
+
+  }
+  
+
+  /*------------------------------------*\
+    == Home > Who
+  \*------------------------------------*/
+  #who{
+    padding: 80px 0;
+
+    span{
+      display: block;
+      text-align: center;
+      font-size: rem(50);
+
+    }
+    h2{
+      text-align: center;
+    }
+    p{
+      margin: 20px auto;
+      font-size: em(18);
+      text-align: center;
+    }
+    .cell.top{
+      text-align: center;
+
+      span{
+        display: block;
+        margin-bottom: 10px;
+        font-size: rem(40);
+        color: $grey-1;
+      }
+      &:hover{
+        span{
+          color: $green-2;
+        }
+      }
+      @media (max-width: 540px){
+        &+.cell.top{
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+
+
+  /*------------------------------------*\
+    == Home > How
+  \*------------------------------------*/
+  #how{
+    
+    .cell{
+      padding: 10px;
+      text-align: center;
+    }
+
+    pre{
+      // display: block;
+
+      white-space: pre-wrap;
+    }
+  }
+
+}
