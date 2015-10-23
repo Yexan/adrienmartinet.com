@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Validation de formulaire visuelle",
+    "date": "23 octobre 2015",
+    "description": "Étant en train de travailler pour un projet d'association (Tout En Attente), j'ai décidé de partager la validation visuelle du formulaire que j'ai réalisé.<br />L'exemple est dispo sur Codepen !",
+    "url": "http://codepen.io/Yexan/pen/GpQxWM"
+  },{
+    "title": "Moutain tile",
+    "date": "22 octobre 2015",
+    "description": "Ayant trouvé <a href='#'>cette animation</a> sur Dribble, j'ai décidé de la réaliser en CSS.<br />Le projet est disponible sur Codepen, n'hésitez pas à forker :)",
+    "url": "http://codepen.io/Yexan/pen/MaQyBq"
+  },{
+    "title": "Logo CSS",
+    "date": "21 octobre 2015",
+    "description": "Aujourd'hui j'ai décidé d'essayer de reproduire mon logo uniquement en CSS.<br />Le rendu peut être plus intéressant en SVG mais le but était ici uniquement de se challenger en CSS.<br />Le résultat peut encore être un peu améliorer, le code source est dispo sur Github !",
+    "url": "https://github.com/Yexan/LogoCss"
+  },{
+    "title": "Source du site public",
+    "date": "20 octobre 2015",
+    "description": "Aujourd'hui j'ai décidé de passer le code source de <a href='http://adrienmartinet.com'>adrienmartinet.com</a> disponible sur github.",
+    "url": "https://github.com/Yexan/adrienmartinet.com"
+  },{
+    "title": "Update du front-end starter",
+    "date": "19 octobre 2015",
+    "description": "Update du framework \"front-end starter\" que j'ai créé pour créer rapidement des projets front-end.",
+    "url": "https://github.com/20degresalombre/frontend-starter"
+  }
+]
