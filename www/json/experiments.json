@@ -1,5 +1,10 @@
 [
   {
+    "title": "Toggle Checkbox - CSS only",
+    "date": "26 octobre 2015",
+    "description": "Après avoir découvert <a href='https://dribbble.com/shots/2309834-Yet-another-toggle-animation' target='_blank'>ce Dribbble</a>, j'ai eu envie de le réaliser.<br />Il s'agit d'un bouton de type checkbox dont l'UI a été totalement modifié. Le tout fonctionne sans Javascript, CSS only<br />Le code est dispo sur Codepen :)",
+    "url": "http://codepen.io/Yexan/pen/NGYXQq"
+  },{
     "title": "Searchbar transform",
     "date": "25 octobre 2015",
     "description": "Après avoir découvert <a href='https://dribbble.com/shots/2308755-Search-Transform-Principle-Freebie' target='_blank'>ce Dribbble</a>, j'ai eu envie de le réaliser.<br />Il s'agit d'un bouton de recherche qui se transforme en barre de recherche lorsque l'on clique dessus.<br />Le code est dispo sur Codepen :)",
