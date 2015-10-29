@@ -1,5 +1,20 @@
 [
   {
+    "title": "Animated Face",
+    "date": "29 octobre 2015",
+    "description": "Petite animation de la tête d'un personnage. Le tout fonctionne sans Javascript, CSS only.<br />Le code est dispo sur Codepen :)",
+    "url": "http://codepen.io/Yexan/pen/PPeyWr"
+  },{
+    "title": "CSS Cloud - Full box-shadow VS box-shadow + before",
+    "date": "28 octobre 2015",
+    "description": "Petite expérimentation sur la réalisation d'un nuage en CSS. J'ai opposé les avantages et inconvénients d'utiliser une technique full box-shadow ou box-shadow et un attribut before. Le tout fonctionne sans Javascript, CSS only.<br />Le code est dispo sur Codepen :)",
+    "url": "http://codepen.io/Yexan/pen/MaGEVo"
+  },{
+    "title": "Catch me the moon",
+    "date": "27 octobre 2015",
+    "description": "Petite animation représentant une scène de nuit, près d'un lac, avec un arbre éclairé par la lune et quelques étoiles qui bougent légèrement. Le tout fonctionne sans Javascript, CSS only.<br />Le code est dispo sur Codepen :)",
+    "url": "http://codepen.io/Yexan/pen/eprZLV"
+  },{
     "title": "Morning Hero",
     "date": "27 octobre 2015",
     "description": "Petite animation représentant le héro du matin, son mug de café / thé en fonction des goûts :D. Le tout fonctionne sans Javascript, CSS only.<br />Le code est dispo sur Codepen :)",
