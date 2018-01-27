@@ -1,0 +1,140 @@
+@import ../mixins/utilities
+
+.home--header
+  position: relative
+  +flex-column-center
+  +w-h(100%, 400px)
+  padding: 20px
+  background-color: #ddd7f5
+
+  @media (max-width: 680px)
+    height: 220px
+    padding: 5px
+
+
+.home--header--infos
+  +flex-row-between
+  +wrapper
+  padding: 25px 60px
+
+  @media (max-width: 950px)
+    padding: 10px
+
+
+.home--header--name
+  position: relative
+  font-size: 40px
+  line-height: 1.3
+  z-index: 2
+
+  @media (max-width: 850px)
+    font-size: 30px
+
+  @media (max-width: 600px)
+    font-size: 24px
+
+  @media (max-width: 500px)
+    max-width: 155px
+
+  span
+    display: block
+    color: #663d75
+    font-size: 24px
+    opacity: .7
+
+    @media (max-width: 850px)
+      font-size: 18px
+
+    @media (max-width: 600px)
+      font-size: 14px
+
+
+.home--header--networks
+  position: relative
+  +flex-column-right
+  z-index: 4
+  visibility: hidden
+
+  & > *
+    visibility: visible
+
+  &:hover > *
+    opacity: .3
+
+  & > *:hover
+    opacity: 1
+
+
+.home--header--image
+  position: absolute
+  +positions
+  background-image: url('../images/adrien.jpg')
+  background-position: center
+  background-size: auto 100%
+  background-repeat: no-repeat
+  z-index: 1
+
+
+.home--past-work
+  position: relative
+  padding: 0 40px
+  background: linear-gradient(168deg, #fcfcfc 40%, #cfcbe6)
+  z-index: 2
+
+  @media (max-width: 680px)
+    padding: 0
+
+
+.home--past-work--wrapper
+  +wrapper(890px)
+  background-color: #fff
+  transform: translateY(-35px)
+
+  @media (max-width: 680px)
+    transform: translateY(0)
+
+
+.home--past-work--title
+  position: relative
+  margin: 0
+  padding: 20px
+  font-size: 24px
+  font-style: italic
+  letter-spacing: 8pt
+  text-align: center
+  text-transform: uppercase
+
+  @media (max-width: 500px)
+    font-size: 20px
+
+  &:after
+    position: absolute
+    content: ''
+    +bottom-left(0, "calc(50% - 60px)")
+    +w-h(120px, 4px)
+    background: #663d75
+    background: linear-gradient(168deg, #663d75 40%, #663d5e)
+
+    @media (max-width: 500px)
+      height: 3px
+
+
+
+.jobs
+  +flex-row-left-stretch
+  flex-wrap: wrap
+  padding: 10px 0 0
+  visibility: hidden
+
+  @media (max-width: 800px)
+    +flex-row-stretch
+
+  & > *
+    visibility: visible
+
+  &:hover > *
+    opacity: .3
+
+  & > *:hover
+    opacity: 1
+

@@ -2,131 +2,34 @@
 <html lang="fr" itemscope itemtype="http://schema.org/WebPage">
 <head>
   @@include('./partials/head.tpl.html', {
-  "meta_title": "Adrien Martinet",
-  "meta_desc": "Adrien Martinet, co-fondateur et fullstack developer de 20 degés à l'ombre. Freelance ront-end et backend."
-})
+    "meta_title": "Adrien Martinet",
+    "meta_desc": "Adrien Martinet, fullstack developer Freelance, front-end expert"
+  })
 </head>
 <body role="document">
-
-
-  <!-- Left Pannel -->
-  <section id="left-pannel">
-    <header>
-      <figure>
-        <img src="images/logo.png" alt="Logo Adrien Martinet" width="100">
-      </figure>
-    </header>
-    <div class="profil-content">
-      <div class="profil">
-        <figure>
-          <img src="images/amt.png" alt="Adrien Martinet" width="54">
-        </figure>
-        <h1>Adrien Martinet</h1>
-        <p>
-          Fullstack Developer
-        </p>
+  <div class="page-frame">
+    <header class="home--header">
+      <div class="home--header--infos">
+        <h1 class="home--header--name">
+          Adrien Martinet
+          <span>Fullstack Developer</span>
+        </h1>
+        <div class="home--header--networks">
+           @@loop('./components/network.tpl.html', '../static_data/networks.json")
+        </div>
       </div>
-    </div>
-    <nav role="navigation">
-      <ul>
-        <li>
-          <a href="#intro" class="btn material flat big link active">
-            <i class="icon-atom"></i>
-            Introduction
-          </a>
-        </li>
-        <li>
-          <a href="#a-propos" class="btn material flat big link">
-            <i class="icon-profile"></i>
-            A propos
-          </a>
-        </li>
-        <li>
-          <a href="#contact" class="btn material flat big link">
-            <i class="icon-envelope"></i>
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="follow">
-      <p>
-        Retrouvez-moi sur
-      </p>
-      <ul>
-        <li>
-          <a href="https://twitter.com/_Adrien_M" target="_blank"><span class="icon-twitter"></span></a>
-        </li>
-        <li>
-          <a href="https://plus.google.com/u/0/+AdrienMartinet/posts" target="_blank"><span class="icon-googleplus"></span></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/adrienmartinet" target="_blank"><span class="icon-linkedin"></span></a>
-        </li>
-      </ul>
-    </div>
-  </section>
+      <div class="home--header--image"></div>
+    </header>
 
-
-
-  <!-- Main Pannel -->
-  <section id="main-pannel" role="main">
-    
-
-    <!-- Introduction -->
-    <div id="intro">
-      <div class="cell intro--main">
-        <h2>Actuellement</h2> 
-
-        <div class="table actual">
-
-          <figure class="cell">
-            <img src="images/logo_20d.png" alt="Logo de 20 degrés à l'ombre" width="120">
-          </figure>
-
-          <div class="cell">
-            <p>
-              Je suis actuellement <strong>Fullstack Developer</strong> et <strong>Co-Fondateur</strong> de <strong>20 degrés à l'ombre</strong>.                               
-            </p>
-            <a href="http://www.20degresalombre.com" target="_blank" class="btn material">Découvrir 20 degrés à l'ombre</a>
-          </div>
-
-        </div><!-- .actual -->
-        
-        <a href="lab.html" class="btn material">Découvrir mon Lab !</a>
-
-     </div><!-- .intro- -main -->
-   </div>
-
-
-   <!-- A propos -->
-   <div id="a-propos">
-    <div class="cell">
-      <h2>A propos</h2>
-      <p>
-        Après avoir obtenu un <strong>DUT Services et Réseaux de Communication</strong> à l'<strong>IUT de Troyes</strong> j'ai poursuivi une formation de <strong>chef de projet multimédia</strong> à l'<strong>IESA Multimédia</strong>. <br>
-        Lors de ces dernières années, j'ai pu acquérir une expérience professionnelle auprès de structures de différentes tailles et enrichir mes connaisances grâce à une veille quotidienne des dernières nouveautés en matière de technologies web. <br>
-        Je suis maintenant <strong>Fullstack Developer</strong> et <strong>Co-founder</strong> de <strong>20 degrés à l'ombre</strong>.
-      </p>
-    </div>
+    <section class="home--past-work">
+      <div class="home--past-work--wrapper">
+        <h2 class="home--past-work--title">Past work</h2>
+        <div class="jobs">
+          @@loop('./components/job.tpl.html', '../static_data/jobs.json")
+        </div>
+      </div>
+    </section>
+    @@include('./components/contact-panel.tpl.html')
   </div>
-
-  
-  <!-- Contact -->
-  <div id="contact">
-    <div class="cell">
-      <h2>Contact</h2>
-
-      <a href="mailto:contact.adrien.martinet@gmail.com" class="btn material email"><i class="icon-envelope"></i></a>
-
-      @@include('./partials/footer.tpl.html')
-
-    </div>
-  </div>
-
-</section><!-- Main Pannel -->
-
-
-<script src="js/main.js"></script>
 </body>
 </html>

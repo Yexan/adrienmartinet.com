@@ -1,0 +1,25 @@
+@import ../mixins/utilities
+
+.contact-panel
+  +flex-column-center
+  padding: 60px 20px
+  background-color: #2b2b2b
+  background: linear-gradient(168deg, #3C3C3B 40%, #2b2b2b)
+
+
+.contact-button
+  padding: 13px 40px
+  +color-and-hover(#fff)
+  font-size: 18px
+  font-style: italic
+  font-weight: 700
+  letter-spacing: 8pt
+  text-align: center
+  text-transform: uppercase
+  +bg-color-and-hover(#663d5e, #663d75)
+  border-radius: 40px
+  transition: all .3s ease-in-out
+
+  @media (max-width: 500px)
+    padding: 12px 30px
+    font-size: 14px
