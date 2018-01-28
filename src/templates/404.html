@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  @@include('./partials/head.tpl.html', {
+    "meta_title": "Adrien Martinet",
+    "meta_desc": "Adrien Martinet, fullstack developer Freelance, front-end expert"
+  })
+</head>
+<body role="document">
+  <div class="page-frame">
+    <header class="home--header">
+      <div class="home--header--infos">
+        <h1 class="home--header--name">
+          Adrien Martinet
+          <span>Fullstack Developer</span>
+        </h1>
+        <div class="home--header--networks">
+           @@loop('./components/network.tpl.html', '../static_data/networks.json")
+        </div>
+      </div>
+      <div class="home--header--image"></div>
+    </header>
+
+    <section class="home--past-work">
+      <div class="home--past-work--wrapper fourOfour-wrapper">
+        <h2 class="home--past-work--title">404</h2>
+        <p>
+          Wrong page uh ?!
+        </p>
+      </div>
+    </section>
+    @@include('./components/contact-panel.tpl.html')
+  </div>
+</body>
+</html>
